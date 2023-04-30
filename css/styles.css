@@ -150,6 +150,18 @@ img {
   color: var(--accent-color);
 }
 
+.contacts-header-link {
+  display: flex;
+  align-items: center;
+}
+
+.header-icon {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+  margin-right: 10px;
+}
+
 .contacts-header {
   margin-left: auto;
 }
@@ -178,6 +190,13 @@ img {
 
 .hero {
   background-color: #2f303a;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/hero-bg-img.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .hero {
@@ -238,6 +257,21 @@ img {
   align-items: flex-start;
 }
 
+.thumb-features-icon {
+  width: 270px;
+  height: 120px;
+  padding: 25px 100px;
+  margin-bottom: 30px;
+
+  background: var(--section-background-color);
+  border-radius: 4px;
+}
+
+.features-icon {
+  width: 70px;
+  height: 70px;
+}
+
 .title {
   margin-bottom: 10px;
 
@@ -288,6 +322,8 @@ img {
   text-align: center;
 
   background-color: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
@@ -298,6 +334,8 @@ img {
 .team-card {
   padding-top: 30px;
   padding-bottom: 30px;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 
 .team-name {
@@ -309,11 +347,29 @@ img {
 }
 
 .team-role {
+  margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
 
   color: var(--secondary-text-color);
+}
+
+.team-cocial-icons-panel {
+  display: flex;
+}
+
+.team-cocial-icon-thumb {
+  width: 44px;
+  height: 44px;
+
+  color: #afb1b8;
+}
+
+.team-cocial-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
 }
 
 /* ================= /OUR TEAM ================= */
