@@ -189,6 +189,9 @@ img {
 /* ================= HERO ================= */
 
 .hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+
   background-color: #2f303a;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
@@ -197,11 +200,6 @@ img {
     url("../images/hero-bg-img.jpg");
   background-repeat: no-repeat;
   background-position: center;
-}
-
-.hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
 }
 
 .main-title {
@@ -355,21 +353,33 @@ img {
   color: var(--secondary-text-color);
 }
 
-.team-cocial-icons-panel {
+.social-list {
   display: flex;
+  justify-content: space-between;
 }
 
-.team-cocial-icon-thumb {
+.social-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 44px;
   height: 44px;
-
-  color: #afb1b8;
+  background-color: #ffffff;
+  border-radius: 50%;
 }
 
-.team-cocial-icon {
-  width: 20px;
-  height: 20px;
-  fill: currentColor;
+.social-list-icon {
+  fill: #afb1b8;
+}
+
+.social-list-link:hover .social-list-icon,
+.social-list-link:focus .social-list-icon {
+  fill: #ffffff;
+}
+
+.social-list-link:hover,
+.social-list-link:focus {
+  background-color: var(--accent-color);
 }
 
 /* ================= /OUR TEAM ================= */
@@ -390,6 +400,10 @@ img {
 
 .logo-second-part-footer {
   color: var(--text-color-light);
+}
+
+.adress-wrapper {
+  margin-right: 70px;
 }
 
 .contacts-item:not(:last-child) {
@@ -421,6 +435,29 @@ img {
 .contacts-link-phone,
 .contacts-link-email {
   color: rgba(255, 255, 255, 0.6);
+}
+
+.join-now {
+  margin-top: 12px;
+  width: 206px;
+}
+
+.join-now-title {
+  margin-bottom: 20px;
+  color: var(--text-color-light);
+}
+
+.join-now .social-list-link {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.join-now .social-list-icon {
+  fill: #ffffff;
+}
+
+.join-now .social-list-link:hover,
+.join-now .social-list-link:focus {
+  background-color: var(--accent-color);
 }
 
 /* ================= /FOOTER ================= */
@@ -475,6 +512,13 @@ img {
 .projects-list-item {
   width: 370px;
   margin: 15px;
+}
+
+.projects-list-item:hover,
+.projects-list-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+    0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .projects-card {
